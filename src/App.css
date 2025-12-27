@@ -1,0 +1,120 @@
+@font-face {
+  font-family: Ephesis;
+  src: url("./assets/fonts/Ephesis-Regular.ttf");
+}
+@font-face {
+  font-family: Poiretone;
+  src: url("./assets/fonts/PoiretOne-Regular.ttf");
+}
+@font-face {
+  font-family: Raleway;
+  src: url("./assets/fonts/Raleway-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: InkFree;
+  src: url("./assets/fonts/Inkfree.ttf");
+}
+
+@theme {
+  /* Fonts */
+  --font-ephesis: Ephesis, "sanserif";
+  --font-poiretone: Poiretone, "sanserif";
+  --font-raleway: Raleway, "sanserif";
+  --font-inkfree: InkFree, "sanserif";
+
+  /* Animations */
+  --animate-blink: blink 5s steps(2, end) infinite;
+  @keyframes blink {
+    from {
+      color: white;
+    }
+    to {
+      color: grey;
+      text-shadow: 2px 2px 20px white;
+    }
+  }
+  --animate-blinky: blinky 2s steps(2, end) infinite;
+  @keyframes blinky {
+    0%,
+    20%,
+    40%,
+    100% {
+      color: white;
+    }
+    10%,
+    30% {
+      color: grey;
+      text-shadow: 2px 2px 20px white;
+    }
+  }
+  --animate-floater1: floater1 30s infinite alternate;
+  @keyframes floater1 {
+    from {
+      right: 0;
+    }
+    to {
+      right: 95%;
+    }
+  }
+  --animate-floater2: floater2 30s infinite alternate;
+  @keyframes floater2 {
+    from {
+      left: 0;
+    }
+    to {
+      left: 93%;
+    }
+  }
+  --animate-floater3: floater3 15s infinite alternate;
+  @keyframes floater3 {
+    from {
+      top: 0;
+      right: 0;
+    }
+    to {
+      top: 99%;
+      right: 93%;
+    }
+  }
+  --animate-floater4: floater4 55s infinite alternate;
+  @keyframes floater4 {
+    from {
+      bottom: 0;
+    }
+    to {
+      bottom: 95%;
+    }
+  }
+   --animate-floater5: floater5 65s infinite alternate;
+  @keyframes floater5 {
+    from {
+      bottom: 0;
+    }
+    to {
+      bottom: 95%;
+    }
+  }
+}
+
+::selection {
+  background-color: #46a293;
+  color: #ffffff;
+}
+
+@import "tailwindcss";
+
+@layer utilities {
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none; 
+        scrollbar-width: none; 
+      }
+    }
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
