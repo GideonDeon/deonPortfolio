@@ -39,19 +39,19 @@ function Contact() {
           </p>
         </div>
         <span className="block w-fit relative left-[50%] -translate-x-[50%] mt-15 text-white text-2xl space-x-5">
-          <a href="" className="">
+          <a href="https://wa.me/+2348154027435" className="">
             <FontAwesomeIcon
               icon="fa-brands fa-whatsapp"
               className="text-3xl text-[#46a293] hover:text-[#6ef1dc] hover:text-shadow-[0px_0px_20px_white] hover:-translate-y-1 transition-all duration-150"
             />
           </a>
-          <a href="" className="">
+          <a href="https://github.com/GideonDeon" className="">
             <FontAwesomeIcon
               icon="fa-brands fa-github"
               className="text-3xl text-[#46a293] hover:text-[#6ef1dc] hover:text-shadow-[0px_0px_20px_white] hover:-translate-y-1 transition-all duration-150"
             />
           </a>
-          <a href="" className="">
+          <a href="https://www.linkedin.com/in/deon000/" className="">
             <FontAwesomeIcon
               icon="fa-brands fa-linkedin-in"
               className="text-3xl text-[#46a293] hover:text-[#6ef1dc] hover:text-shadow-[0px_0px_20px_white] hover:-translate-y-1 transition-all duration-150"
@@ -63,7 +63,7 @@ function Contact() {
               className="text-3xl text-[#46a293] hover:text-[#6ef1dc] hover:text-shadow-[0px_0px_20px_white] hover:-translate-y-1 transition-all duration-150"
             />
           </a>
-          <a href="" className="">
+          <a href="https://t.me/DeonPriest" className="">
             <FontAwesomeIcon
               icon="fa-brands fa-telegram"
               className="text-3xl text-[#46a293] hover:text-[#6ef1dc] hover:text-shadow-[0px_0px_20px_white] hover:-translate-y-1 transition-all duration-150"

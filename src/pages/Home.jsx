@@ -46,19 +46,19 @@ function Header() {
       <div className="lg:grid grid-cols-2 gap-15">
         <div className="lg:mt-30 xl:ml-35">
           <span className="text-white text-2xl ml-2 sm:ml-20 lg:ml-10">
-            <a href="" className="ml-0.5">
+            <a href="https://github.com/GideonDeon" className="ml-0.5">
               <FontAwesomeIcon
                 icon="fa-brands fa-github"
                 className="lg:text-4xl"
               />
             </a>
-            <a href="" className="ml-0.5">
+            <a href="https://www.linkedin.com/in/deon000/" className="ml-0.5">
               <FontAwesomeIcon
                 icon="fa-brands fa-linkedin-in"
                 className="lg:text-4xl"
               />
             </a>
-            <a href="" className="ml-0.5">
+            <a href="https://wa.me/+2348154027435" className="ml-0.5">
               <FontAwesomeIcon
                 icon="fa-brands fa-whatsapp"
                 className="lg:text-4xl"
@@ -70,7 +70,7 @@ function Header() {
                 className="lg:text-4xl"
               />
             </a>
-            <a href="" className="ml-0.5">
+            <a href="https://t.me/DeonPriest" className="ml-0.5">
               <FontAwesomeIcon
                 icon="fa-brands fa-telegram"
                 className="lg:text-4xl"
@@ -100,7 +100,7 @@ function Header() {
               Hire me
             </a>
             <a
-              href="./src/assets/cv/gideon_oluwanifemi.pdf"
+              href="/cv/gideon_oluwanifemi.pdf"
               className="text-gray-300 mr-5 p-2 pt-1 border-2 rounded-[10px] border-[#46a293] hover:bg-gray-400 hover:text-white"
             >
               Download CV
