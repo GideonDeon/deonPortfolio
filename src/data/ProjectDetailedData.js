@@ -42,24 +42,6 @@ export const websites = [
 
 export const templates = [
     {
-        image: "./images/template1.png",
-        alt: "template 1",
-        url: "https://deontemplatetwo.netlify.app/",
-        text: "view"
-    },
-    {
-        image: "./images/template2.png",
-        alt: "template 2",
-        url: "https://deontemplateone.netlify.app/",
-        text: "view"
-    },
-    {
-        image: "./images/template3.png",
-        alt: "template 3",
-        url: "https://deontemplatethree.netlify.app/",
-        text: "view"
-    },
-    {
         image: "./images/template4.png",
         alt: "template 4",
         url: "https://deontemplatefour.netlify.app/",
@@ -69,6 +51,24 @@ export const templates = [
         image: "./images/template5.PNG",
         alt: "template 5",
         url: "https://deontemplatefive.netlify.app/",
+        text: "view"
+    },
+    {
+        image: "./images/template3.png",
+        alt: "template 3",
+        url: "https://deontemplatethree.netlify.app/",
+        text: "view"
+    },
+    {
+        image: "./images/template1.png",
+        alt: "template 1",
+        url: "https://deontemplatetwo.netlify.app/",
+        text: "view"
+    },
+    {
+        image: "./images/template2.png",
+        alt: "template 2",
+        url: "https://deontemplateone.netlify.app/",
         text: "view"
     },
 ]
