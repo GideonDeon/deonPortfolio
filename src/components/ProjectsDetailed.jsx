@@ -72,7 +72,7 @@ function FadeInSectionApps() {
       ref={domRef}
       className={`transition-all duration-1200 ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-5"
-      }`}
+      } delay-500`}
     >
       <div className="bg-[#1f2326] font-raleway">
         <h1 className="text-white text-2xl text-center pt-2">
@@ -145,7 +145,7 @@ function FadeInSectionSites() {
       ref={domRef}
       className={`transition-all duration-1200 ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-5"
-      }`}
+      } delay-500`}
     >
       <div className="bg-[#151b1f] font-raleway">
         <h1 className="text-white text-2xl text-center pt-2">
@@ -218,7 +218,7 @@ function FadeInSectionTemplates() {
       ref={domRef}
       className={`transition-all duration-1200 ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-5"
-      }`}
+      } delay-500`}
     >
       <div className="bg-[#1f2326] font-raleway">
         <h1 className="text-white text-2xl text-center pt-2">

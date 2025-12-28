@@ -88,17 +88,13 @@ function FadeInSection() {
 function Carousel() {
   const [index, setIndex] = useState(0);
 
-  const nextSlide = () => {
-    setIndex((prev) => (prev + 1) % projectImages.length);
-  };
-
   useEffect(() => {
-    const interval = setInterval(() => {
-      nextSlide();
-    }, 2000);
+  const interval = setInterval(() => {
+    setIndex((prev) => (prev + 1) % projectImages.length);
+  }, 2000);
 
-    return () => clearInterval(interval);
-  }, []);
+  return () => clearInterval(interval);
+}, []);
 
   return (
     <>
