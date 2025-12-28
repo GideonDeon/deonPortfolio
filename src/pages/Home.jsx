@@ -1,6 +1,6 @@
 import PageNav from "../layout/PageNav";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Services from "../components/services";
+import Services from "../components/Services";
 import About from "../components/About";
 import Skills from "../components/Skills";
 import Projects from "../components/Projects";
