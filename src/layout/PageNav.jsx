@@ -40,15 +40,21 @@ function PageNavMobile() {
       checkboxRef.current.checked = false;
     }
   };
+  const period = new Date().getMonth();
+  const isWinter = period === 11 || period === 0;
   return (
     <div className="grid grid-cols-[1fr_1fr] bg-black/10 h-25 w-full relative lg:hidden ">
       <div>
-        <p className="text-white font-ephesis text-2xl ml-3 mt-4 w-fit">
+        {
+          isWinter ? (<p className="text-white font-ephesis text-2xl ml-3 mt-4 w-fit">
           <span className="inline-block h-5 w-5 -rotate-45 relative -top-2 left-2">
             <img src="/images/santa-hat.png" alt="santa-hat" />
           </span>
           Deon
-        </p>
+        </p>):(<p className="text-white font-ephesis text-2xl ml-3 mt-4 w-fit">
+          Deon
+        </p>)
+        } 
       </div>
       <div className="">
         <input
@@ -102,16 +108,21 @@ function PageNavDesktop() {
       checkboxRef.current.checked = false;
     }
   };
-
+  const period = new Date().getMonth();
+  const isWinter = period === 11 || period === 0;
   return (
     <div className="hidden lg:grid grid-cols-[2fr_1fr] bg-black/10 h-15 w-ful">
       <div>
-        <p className="text-white font-ephesis text-2xl mt-3 ml-10 cursor-grab w-fit">
+        {
+          isWinter ? (<p className="text-white font-ephesis text-2xl mt-3 ml-10 cursor-grab w-fit">
           <span className="inline-block h-5 w-5 -rotate-45 relative -top-2 left-2">
             <img src="/images/santa-hat.png" alt="santa-hat" />
-          </span>{" "}
+          </span>
           Deon
-        </p>
+        </p>):(<p className="text-white font-ephesis text-2xl mt-3 ml-10 cursor-grab w-fit">
+          Deon
+        </p>)
+        }
       </div>
       <div>
         <ul className="flex gap-15 mt-3 pr-6">
