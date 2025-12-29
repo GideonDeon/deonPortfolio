@@ -1,16 +1,93 @@
-# React + Vite
+# Deon Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive personal portfolio website built with **React**.  
+This project showcases my skills, services, and projects with smooth navigation, animations, and a clean UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## React Compiler
+👉 https://deonportfolio.netlify.app  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Single Page Application (SPA) with React Router
+- Smooth page navigation with scroll-to-top handling
+- Project carousel and detailed project views
+- Seasonal visual effects (snowfall during winter months)
+- Responsive design using Tailwind CSS
+- Font Awesome icons integration
+- Clean and modular component structure
+
+---
+
+## 🧱 Tech Stack
+
+- **React**
+- **React Router**
+- **Tailwind CSS**
+- **Font Awesome**
+- **react-snowfall**
+- **Vite**
+- **Netlify** for deployment
+
+---
+
+## 📂 Project Structure
+
+#### src/
+#### ├── components/
+####  &nbsp;├── About.jsx
+####  &nbsp;├── Projects.jsx
+####  &nbsp;├── ProjectsDetailed.jsx
+####  &nbsp;├── Services.jsx
+####  &nbsp;├── Skills.jsx
+####  &nbsp;└── ScrollToTop.jsx
+#### ├── layout/
+####  &nbsp;├── PageNav.jsx
+####  &nbsp;├── PageNavWork.jsx
+####  &nbsp;└── Footer.jsx
+#### ├── pages/
+####  &nbsp;├── Home.jsx
+####  &nbsp;├── Explore.jsx
+####  &nbsp;└── MyWorks.jsx
+#### ├── App.jsx
+#### └── main.jsx
+
+
+---
+
+## 🛠 Installation & Setup
+
+### Clone the repository
+
+```
+git clone https://github.com/GideonDeon/deonPortfolio.git
+cd deonPortfolio
+```
+### npm install
+
+## Run locally
+### npm run dev
+
+## 📂 Assets
+
+### Static assets such as images and PDFs are served from the public/ folder:
+
+#### public/
+#### ├── images/
+#### ├── cv/
+
+## 📞 Contact
+
+- GitHub: https://github.com/GideonDeon
+
+- LinkedIn: https://www.linkedin.com/in/deon000/
+
+- WhatsApp: +234 815 402 7435
+
+## 📜 License
+
+#### This project is open source and available under the MIT License.
