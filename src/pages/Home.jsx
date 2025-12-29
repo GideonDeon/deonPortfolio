@@ -6,6 +6,7 @@ import Skills from "../components/Skills";
 import Projects from "../components/Projects";
 import Floaters from "../components/Floaters";
 import Footer from "../layout/Footer";
+import Snowfall from "react-snowfall";
 
 function Home() {
   return (
@@ -16,26 +17,53 @@ function Home() {
 }
 
 function ShadowEffect() {
+  const period = new Date().getMonth();
+  const isWinter = period === 11 || period === 0;
   return (
-    <div className="h-fit shadow-[0px_0px_20px_black] relative">
-      <Header />
-      <Floaters />
-      <Services />
-      <div>
-        <div className="sticky top-0">
-          <About />
+    <>
+      {isWinter ? (
+        <div className="h-fit shadow-[0px_0px_20px_black] relative">
+          <Snowfall color="white" style={{zIndex:50}} />
+          <Header />
+          <Floaters />
+          <Services />
+          <div>
+            <div className="sticky top-0">
+              <About />
+            </div>
+            <div className="sticky top-0 z-1">
+              <Skills />
+            </div>
+            <div className="sticky top-0 z-2">
+              <Projects />
+            </div>
+          </div>
+          <div>
+            <Footer />
+          </div>
         </div>
-        <div className="sticky top-0 z-1">
-          <Skills />
+      ) : (
+        <div className="h-fit shadow-[0px_0px_20px_black] relative">
+          <Header />
+          <Floaters />
+          <Services />
+          <div>
+            <div className="sticky top-0">
+              <About />
+            </div>
+            <div className="sticky top-0 z-1">
+              <Skills />
+            </div>
+            <div className="sticky top-0 z-2">
+              <Projects />
+            </div>
+          </div>
+          <div>
+            <Footer />
+          </div>
         </div>
-        <div className="sticky top-0 z-2">
-          <Projects />
-        </div>
-      </div>
-      <div>
-        <Footer />
-      </div>
-    </div>
+      )}
+    </>
   );
 }
 

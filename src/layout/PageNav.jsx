@@ -43,7 +43,12 @@ function PageNavMobile() {
   return (
     <div className="grid grid-cols-[1fr_1fr] bg-black/10 h-25 w-full relative lg:hidden ">
       <div>
-        <p className="text-white font-ephesis text-2xl ml-3 mt-4 w-fit">Deon</p>
+        <p className="text-white font-ephesis text-2xl ml-3 mt-4 w-fit">
+          <span className="inline-block h-5 w-5 -rotate-45 relative -top-2 left-2">
+            <img src="/images/santa-hat.png" alt="santa-hat" />
+          </span>
+          Deon
+        </p>
       </div>
       <div className="">
         <input
@@ -80,10 +85,7 @@ function PageNavMobile() {
               onClick={HandleLinkClick}
               className="w-fit h-8 pt-1 block font-aldrich text-white"
             >
-              <FontAwesomeIcon
-                icon={icon}
-                className="text-[#6ef1dc]"
-              />
+              <FontAwesomeIcon icon={icon} className="text-[#6ef1dc]" />
               &nbsp;<a href={href}>{text}</a>
             </li>
           ))}
@@ -105,6 +107,9 @@ function PageNavDesktop() {
     <div className="hidden lg:grid grid-cols-[2fr_1fr] bg-black/10 h-15 w-ful">
       <div>
         <p className="text-white font-ephesis text-2xl mt-3 ml-10 cursor-grab w-fit">
+          <span className="inline-block h-5 w-5 -rotate-45 relative -top-2 left-2">
+            <img src="/images/santa-hat.png" alt="santa-hat" />
+          </span>{" "}
           Deon
         </p>
       </div>
@@ -129,10 +134,7 @@ function PageNavDesktop() {
               className="font-aldrich font-bold text-gray-400 hover:text-[#6ef1dc] hover:text-shadow-[0px_0px_20px_white] 
               overflow-y-scroll no-scrollbar w-6 hover:w-24 flex place-items-center gap-1.5 cursor-pointer transition-all duration-500 "
             >
-              <FontAwesomeIcon
-                icon={icon}
-                className="text-[20px]"
-              />
+              <FontAwesomeIcon icon={icon} className="text-[20px]" />
               <a href={href}>{text}</a>
             </li>
           ))}
