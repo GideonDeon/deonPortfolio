@@ -38,6 +38,12 @@ export const websites = [
         url: "https://savantbakes.netlify.app/",
         text: "visit"
     },
+    {
+        image: "./images/nuelfarms.png",
+        alt: "nuel farms",
+        url: "https://www.nuelfarms.com.ng/",
+        text: "visit"
+    },
 ]
 
 export const templates = [
